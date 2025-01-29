@@ -3,6 +3,8 @@
  const registerLink=document.querySelector('.register-link');
  const btnPopup=document.querySelector('.btn-login-popup');
  const iconClose=document.querySelector('.icon-close');
+ const menu=document.querySelector('.menu');
+
 
  registerLink.addEventListener('click',()=> {
     wrapper.classList.add('active');
@@ -16,3 +18,8 @@
  iconClose.addEventListener('click',()=>{
     wrapper.classList.remove('active-popup');
  });
+
+ menu.addEventListener('click', ()=>{
+   menu.classList.toggle('active');
+ });
+
